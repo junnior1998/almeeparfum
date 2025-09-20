@@ -867,4 +867,494 @@
   </script>
 </body>
 
+=======
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Catálogo — Almée Parfum | Perfumes EDP 25%</title>
+  <meta name="description" content="Almée Parfum — A essencia do melhor ao alcance de todos. Linha autoral EDP 25% inspirada nos best-sellers. Pré-venda em Cajamar. 30 ml R$ 49 | 50 ml R$ 79 | 100 ml R$ 129. Premium Pegasus Exclusif 30 ml R$ 150. Sob encomenda a partir de R$ 49.">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1115;
+      --card:#161922;
+      --muted:#9aa3af;
+      --text:#f3f4f6;
+      --accent:#d4af37;
+      --stroke:#242a36;
+      --input:#0e1016;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Montserrat,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1100px;margin:0 auto;padding:16px}
+    header{position:sticky;top:0;z-index:50;background:rgba(15,17,21,.8);backdrop-filter:blur(6px);border-bottom:1px solid var(--stroke)}
+    .topbar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0}
+    .brand{display:flex;align-items:center;gap:10px}
+    .brand-logo{width:36px;height:36px;border:1px solid var(--stroke);border-radius:8px;display:grid;place-items:center;font-weight:700;color:var(--accent)}
+    .brand-name{font-weight:700;letter-spacing:.5px}
+    .cta{display:flex;gap:10px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:10px;border:1px solid var(--stroke);background:transparent;color:var(--text);font-weight:600;cursor:pointer}
+    .btn.primary{background:var(--accent);color:#111;border-color:var(--accent)}
+    .btn.ghost:hover{background:#151923}
+    /* Botão Instagram estilizado */
+    .btn.instagram{
+      border:none;color:#fff;
+      background:linear-gradient(45deg,#f58529,#dd2a7b,#8134af,#515bd4);
+      background-size:200% 200%;
+      animation:ig 6s ease infinite;
+    }
+    .btn.instagram:hover{filter:brightness(1.05)}
+    @keyframes ig{
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+    }
+
+    .hero{display:grid;gap:14px;padding:18px 0 8px}
+    .hero h1{font-family:"Playfair Display",serif;margin:0;font-size:28px;line-height:1.2}
+    .hero p{margin:0;color:var(--muted)}
+    .badges{display:flex;gap:10px;flex-wrap:wrap;margin-top:6px}
+    .badge{padding:6px 10px;border:1px solid var(--stroke);border-radius:999px;font-size:12px;color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(1,minmax(0,1fr));gap:14px}
+    @media(min-width:700px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(min-width:1000px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+    .card{background:linear-gradient(180deg,rgba(22,25,34,.95),rgba(16,18,24,.95));border:1px solid var(--stroke);border-radius:16px;padding:16px;display:flex;flex-direction:column;gap:12px}
+    .pill{font-size:12px;color:#111;background:var(--accent);display:inline-flex;padding:5px 8px;border-radius:999px;font-weight:700;letter-spacing:.3px}
+    .pill.outline{background:transparent;color:var(--accent);border:1px solid var(--accent);font-weight:600}
+    .title{display:flex;align-items:center;justify-content:space-between;gap:8px}
+    .title h3{margin:0;font-size:17px}
+    .subtitle{margin:0;color:var(--muted);font-size:13px}
+    .notes{font-size:12px;color:var(--muted)}
+    .row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+    .select,.input{flex:1;min-width:120px;background:var(--input);color:var(--text);border:1px solid var(--stroke);border-radius:10px;padding:10px}
+    textarea.input{min-height:70px;resize:vertical}
+    .price{font-weight:700;font-size:18px}
+    .actions{display:flex;align-items:center;gap:10px;margin-top:4px;flex-wrap:wrap}
+    .filters{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 16px}
+    .filters .btn{font-size:13px;padding:8px 12px}
+    .section-title{display:flex;align-items:center;justify-content:space-between;margin:18px 0 10px}
+    .combo{background:#111419;border:1px dashed var(--stroke);border-radius:14px;padding:14px;display:flex;align-items:center;justify-content:space-between;gap:10px}
+    .combo strong{color:var(--accent)}
+    .muted{color:var(--muted)}
+    hr{border:0;border-top:1px solid var(--stroke);margin:18px 0}
+    footer{margin-top:28px;border-top:1px solid var(--stroke);padding:18px 0;color:var(--muted);font-size:14px}
+    .small{font-size:12px;color:var(--muted)}
+    .legal{font-size:12px;color:var(--muted);margin-top:8px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container topbar">
+      <div class="brand">
+        <div class="brand-logo">AP</div>
+        <div class="brand-name">Almée Parfum</div>
+      </div>
+      <div class="cta">
+        <a class="btn ghost" href="#catalogo">Catálogo</a>
+        <a class="btn instagram" id="igTopBtn" target="_blank" rel="noopener">Instagram</a>
+        <a class="btn primary" id="wppTop" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Linha Nº — Alta Concentração (EDP 25%)</h1>
+      <p>"A essencia do melhor ao alcance de todos "</p>
+      <p>Pré‑venda em Cajamar • Entrega em 5–7 dias • Garantia de troca em 7 dias</p>
+      <div class="badges">
+        <span class="badge">30 ml R$ 49 (2 por R$ 89)</span>
+        <span class="badge">50 ml R$ 79 (2 por R$ 149)</span>
+        <span class="badge">100 ml R$ 129</span>
+        <span class="badge">Premium: Pegasus Exclusif 30 ml R$ 150</span>
+        <span class="badge">Sob encomenda a partir de R$ 49</span>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">
+        <h2 id="catalogo" style="margin:0;font-size:20px">Catálogo</h2>
+        <div class="filters">
+          <button class="btn" data-filter="all">Todos</button>
+          <button class="btn" data-filter="masculino">Masculino</button>
+          <button class="btn" data-filter="feminino">Feminino</button>
+          <button class="btn" data-filter="premium">Premium</button>
+          <button class="btn" data-filter="custom">Sob encomenda</button>
+        </div>
+      </div>
+
+      <div class="combo">
+        <div>
+          <div><strong>Combos de lançamento</strong></div>
+          <div class="muted">2x 30 ml por R$ 89 • 2x 50 ml por R$ 149</div>
+        </div>
+        <div class="actions">
+          <a class="btn" id="combo30" target="_blank" rel="noopener">Quero o combo 30 ml</a>
+          <a class="btn" id="combo50" target="_blank" rel="noopener">Quero o combo 50 ml</a>
+        </div>
+      </div>
+
+      <div class="grid" id="cards">
+        <!-- Masculino -->
+        <article class="card" data-category="masculino" data-type="regular" data-product="Nº 01 — Selvagem" data-ref="Inspirado em Sauvage">
+          <div class="title">
+            <h3>Nº 01 Selvagem</h3>
+            <span class="pill">Masculino</span>
+          </div>
+          <p class="subtitle">Fresco aromático • Inspirado em Sauvage</p>
+          <p class="notes">Notas: bergamota, pimenta, ambroxan</p>
+          <div class="row">
+            <select class="select size">
+              <option value="30">30 ml</option>
+              <option value="50">50 ml</option>
+              <option value="100">100 ml</option>
+            </select>
+            <div class="price">R$ --</div>
+          </div>
+          <textarea class="input input-obs" placeholder="Observações (opcional): ex. presente, nome no cartão, etc."></textarea>
+          <div class="actions">
+            <a class="btn primary wpp" target="_blank" rel="noopener">Pedir via WhatsApp</a>
+            <span class="small">EDP 25%</span>
+          </div>
+        </article>
+
+        <article class="card" data-category="masculino" data-type="regular" data-product="Nº 02 — Campeão" data-ref="Inspirado em Invictus Elixir">
+          <div class="title">
+            <h3>Nº 02 Campeão</h3>
+            <span class="pill">Masculino</span>
+          </div>
+          <p class="subtitle">Cítrico amadeirado • Inspirado em Invictus Elixir</p>
+          <p class="notes">Notas: grapefruit, âmbar, madeiras</p>
+          <div class="row">
+            <select class="select size">
+              <option value="30">30 ml</option>
+              <option value="50">50 ml</option>
+              <option value="100">100 ml</option>
+            </select>
+            <div class="price">R$ --</div>
+          </div>
+          <textarea class="input input-obs" placeholder="Observações (opcional)"></textarea>
+          <div class="actions">
+            <a class="btn primary wpp" target="_blank" rel="noopener">Pedir via WhatsApp</a>
+            <span class="small">EDP 25%</span>
+          </div>
+        </article>
+
+        <article class="card" data-category="masculino" data-type="regular" data-product="Nº 03 — VIP Black" data-ref="Inspirado em 212 VIP Black">
+          <div class="title">
+            <h3>Nº 03 VIP Black</h3>
+            <span class="pill">Masculino</span>
+          </div>
+          <p class="subtitle">Oriental aromático • Inspirado em 212 VIP Black</p>
+          <p class="notes">Notas: baunilha, lavanda, absinto</p>
+          <div class="row">
+            <select class="select size">
+              <option value="30">30 ml</option>
+              <option value="50">50 ml</option>
+              <option value="100">100 ml</option>
+            </select>
+            <div class="price">R$ --</div>
+          </div>
+          <textarea class="input input-obs" placeholder="Observações (opcional)"></textarea>
+          <div class="actions">
+            <a class="btn primary wpp" target="_blank" rel="noopener">Pedir via WhatsApp</a>
+            <span class="small">EDP 25%</span>
+          </div>
+        </article>
+
+        <article class="card" data-category="masculino" data-type="regular" data-product="Nº 04 — Warm You" data-ref="Inspirado em Stronger With You">
+          <div class="title">
+            <h3>Nº 04 Warm You</h3>
+            <span class="pill">Masculino</span>
+          </div>
+          <p class="subtitle">Âmbar doce • Inspirado em Stronger With You</p>
+          <p class="notes">Notas: cardamomo, baunilha, castanha</p>
+          <div class="row">
+            <select class="select size">
+              <option value="30">30 ml</option>
+              <option value="50">50 ml</option>
+              <option value="100">100 ml</option>
+            </select>
+            <div class="price">R$ --</div>
+          </div>
+          <textarea class="input input-obs" placeholder="Observações (opcional)"></textarea>
+          <div class="actions">
+            <a class="btn primary wpp" target="_blank" rel="noopener">Pedir via WhatsApp</a>
+            <span class="small">EDP 25%</span>
+          </div>
+        </article>
+
+        <!-- Feminino -->
+        <article class="card" data-category="feminino" data-type="regular" data-product="Nº 05 — Dama Fatal" data-ref="Inspirado em Good Girl">
+          <div class="title">
+            <h3>Nº 05 Dama Fatal</h3>
+            <span class="pill">Feminino</span>
+          </div>
+          <p class="subtitle">Floral gourmand • Inspirado em Good Girl</p>
+          <p class="notes">Notas: tuberosa, jasmim, fava tonka</p>
+          <div class="row">
+            <select class="select size">
+              <option value="30">30 ml</option>
+              <option value="50">50 ml</option>
+              <option value="100">100 ml</option>
+            </select>
+            <div class="price">R$ --</div>
+          </div>
+          <textarea class="input input-obs" placeholder="Observações (opcional)"></textarea>
+          <div class="actions">
+            <a class="btn primary wpp" target="_blank" rel="noopener">Pedir via WhatsApp</a>
+            <span class="small">EDP 25%</span>
+          </div>
+        </article>
+
+        <article class="card" data-category="feminino" data-type="regular" data-product="Nº 06 — Rosé" data-ref="Inspirado em 212 VIP Rosé">
+          <div class="title">
+            <h3>Nº 06 Rosé</h3>
+            <span class="pill">Feminino</span>
+          </div>
+          <p class="subtitle">Floral frutado • Inspirado em 212 VIP Rosé</p>
+          <p class="notes">Notas: champagne, pêssego, rosas</p>
+          <div class="row">
+            <select class="select size">
+              <option value="30">30 ml</option>
+              <option value="50">50 ml</option>
+              <option value="100">100 ml</option>
+            </select>
+            <div class="price">R$ --</div>
+          </div>
+          <textarea class="input input-obs" placeholder="Observações (opcional)"></textarea>
+          <div class="actions">
+            <a class="btn primary wpp" target="_blank" rel="noopener">Pedir via WhatsApp</a>
+            <span class="small">EDP 25%</span>
+          </div>
+        </article>
+
+        <article class="card" data-category="feminino" data-type="regular" data-product="Nº 07 — Scandal" data-ref="Inspirado em Scandal">
+          <div class="title">
+            <h3>Nº 07 Scandal</h3>
+            <span class="pill">Feminino</span>
+          </div>
+          <p class="subtitle">Doce poderoso • Inspirado em Scandal</p>
+          <p class="notes">Notas: mel, jasmim, patchouli</p>
+          <div class="row">
+            <select class="select size">
+              <option value="30">30 ml</option>
+              <option value="50">50 ml</option>
+              <option value="100">100 ml</option>
+            </select>
+            <div class="price">R$ --</div>
+          </div>
+          <textarea class="input input-obs" placeholder="Observações (opcional)"></textarea>
+          <div class="actions">
+            <a class="btn primary wpp" target="_blank" rel="noopener">Pedir via WhatsApp</a>
+            <span class="small">EDP 25%</span>
+          </div>
+        </article>
+
+        <article class="card" data-category="feminino" data-type="regular" data-product="Nº 08 — Âmbar Rosa" data-ref="Inspirado em Lataffa Rose">
+          <div class="title">
+            <h3>Nº 08 Âmbar Rosa</h3>
+            <span class="pill">Feminino</span>
+          </div>
+          <p class="subtitle">Âmbar floral • Inspirado em Lataffa Rose</p>
+          <p class="notes">Notas: rosa, açafrão, musk</p>
+          <div class="row">
+            <select class="select size">
+              <option value="30">30 ml</option>
+              <option value="50">50 ml</option>
+              <option value="100">100 ml</option>
+            </select>
+            <div class="price">R$ --</div>
+          </div>
+          <textarea class="input input-obs" placeholder="Observações (opcional)"></textarea>
+          <div class="actions">
+            <a class="btn primary wpp" target="_blank" rel="noopener">Pedir via WhatsApp</a>
+            <span class="small">EDP 25%</span>
+          </div>
+        </article>
+
+        <!-- Premium -->
+        <article class="card" data-category="premium" data-type="premium" data-product="Pegasus Exclusif (Premium)" data-ref="Edição Premium">
+          <div class="title">
+            <h3>Pegasus Exclusif</h3>
+            <span class="pill outline">Premium</span>
+          </div>
+          <p class="subtitle">Âmbar amadeirado imponente • Edição Premium</p>
+          <p class="notes">Notas: açafrão, madeira de oud, âmbar, baunilha</p>
+          <div class="row">
+            <select class="select size">
+              <option value="30">30 ml</option>
+            </select>
+            <div class="price">R$ --</div>
+          </div>
+          <textarea class="input input-obs" placeholder="Observações (opcional)"></textarea>
+          <div class="actions">
+            <a class="btn primary wpp" target="_blank" rel="noopener">Pedir via WhatsApp</a>
+            <span class="small">EDP 25% • Lote limitado</span>
+          </div>
+        </article>
+
+        <!-- SOB ENCOMENDA -->
+        <article class="card" data-category="custom" data-type="custom">
+          <div class="title">
+            <h3>Sob encomenda</h3>
+            <span class="pill outline">Personalizado</span>
+          </div>
+          <p class="subtitle">Peça uma fragrância que não está no catálogo</p>
+          <input class="input input-frag" type="text" placeholder="Ex.: Dior Homme, Bleu de Chanel, etc." aria-label="Fragrância desejada">
+          <div class="row">
+            <select class="select size">
+              <option value="30">30 ml</option>
+              <option value="50">50 ml</option>
+              <option value="100">100 ml</option>
+            </select>
+            <div class="price">A partir de R$ --</div>
+          </div>
+          <textarea class="input input-obs" placeholder="Observações (opcional): ex. preferências, ocasião, presente, etc."></textarea>
+          <div class="actions">
+            <a class="btn primary wpp" target="_blank" rel="noopener">Pedir via WhatsApp</a>
+            <span class="small">Preço final pode variar conforme fragrância e volume</span>
+          </div>
+        </article>
+      </div>
+
+      <hr>
+
+      <div class="grid">
+        <div class="card">
+          <div class="title"><h3>Como comprar</h3></div>
+          <ol style="margin:0 0 4px 18px">
+            <li>Escolha a fragrância e o tamanho</li>
+            <li>Clique em “Pedir via WhatsApp”</li>
+            <li>Reserve com 50% no Pix</li>
+            <li>Entrega em 5–7 dias</li>
+          </ol>
+          <p class="small">Atendemos Cajamar e região. Combos e pedidos para presente também disponíveis.</p>
+        </div>
+        <div class="card">
+          <div class="title"><h3>Preços de lançamento</h3></div>
+          <p class="muted">Linha regular</p>
+          <ul style="margin:0 0 4px 18px">
+            <li>30 ml R$ 49 • 2 por R$ 89</li>
+            <li>50 ml R$ 79 • 2 por R$ 149</li>
+            <li>100 ml R$ 129</li>
+          </ul>
+          <p class="muted" style="margin-top:8px">Premium</p>
+          <ul style="margin:0 0 4px 18px">
+            <li>Pegasus Exclusif — 30 ml R$ 150</li>
+          </ul>
+          <p class="small">Concentração EDP 25% em toda a linha.</p>
+        </div>
+        <div class="card">
+          <div class="title"><h3>Políticas</h3></div>
+          <p class="small">Garantia de troca em até 7 dias (1x) se você não curtir a fragrância.</p>
+          <p class="legal">Produto autoral. “Inspirado em” é apenas referência olfativa, sem vínculo com as marcas citadas. Não utilizamos marcas ou logos de terceiros.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap">
+        <div>© Almée Parfum • Cajamar/SP</div>
+        <div>
+          <a id="igFooterBtn" class="btn instagram" target="_blank" rel="noopener">Instagram</a>
+          <a id="wppFooter" class="btn" style="margin-left:8px" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Links
+    const WPP = '5511992950289';
+    const IG  = 'https://instagram.com/almeeparfum';
+
+    // Preços
+    const PRICES = {
+      regular: { '30': 49, '50': 79, '100': 129 },
+      premium: { '30': 150 },
+      customStart: { '30': 49, '50': 79, '100': 129 }
+    };
+
+    // Utils
+    const fmt = (v)=> 'R$ ' + v.toFixed(0);
+    const msg = (produto, tamanho, preco, obs)=>{
+      let t = `Olá! Quero reservar ${produto} - ${tamanho} ml (${fmt(preco)}).\nCidade: Cajamar\nForma de pagamento: Pix (50% de sinal)`;
+      if (obs && obs.trim()) t += `\nObservações: ${obs.trim()}`;
+      t += `\nNome: `;
+      return t;
+    };
+    const msgCustom = (frag, tamanho, precoBase, obs)=>{
+      let t = `Olá! Quero solicitar SOB ENCOMENDA: ${frag} - ${tamanho} ml (a partir de ${fmt(precoBase)}). Por favor confirmar o valor final.\nCidade: Cajamar\nForma de pagamento: Pix (50% de sinal)`;
+      if (obs && obs.trim()) t += `\nObservações: ${obs.trim()}`;
+      t += `\nNome: `;
+      return t;
+    };
+    const wppLink = (texto)=> `https://wa.me/${WPP}?text=${encodeURIComponent(texto)}`;
+
+    // Header/rodapé botões
+    document.getElementById('wppTop').href = wppLink('Olá! Quero ver o catálogo e reservar minha fragrância.');
+    document.getElementById('wppFooter').href = wppLink('Olá! Quero fazer um pedido.');
+    document.getElementById('igTopBtn').href = IG;
+    document.getElementById('igFooterBtn').href = IG;
+
+    // Combos
+    document.getElementById('combo30').href = wppLink('Olá! Quero o combo 2x 30 ml por R$ 89.\nFragrâncias escolhidas: ');
+    document.getElementById('combo50').href = wppLink('Olá! Quero o combo 2x 50 ml por R$ 149.\nFragrâncias escolhidas: ');
+
+    // Cards
+    const cards = [...document.querySelectorAll('.card[data-category]')];
+    cards.forEach(card=>{
+      const type = card.dataset.type || 'regular';
+      const select = card.querySelector('.size');
+      const priceEl = card.querySelector('.price');
+      const btn = card.querySelector('.wpp');
+      const produto = card.dataset.product || 'Produto';
+      const inputFrag = card.querySelector('.input-frag');
+      const inputObs = card.querySelector('.input-obs');
+
+      function update(){
+        const size = select?.value || '30';
+        const obs = inputObs?.value || '';
+        if(type === 'custom'){
+          const base = PRICES.customStart[size];
+          priceEl.textContent = 'A partir de ' + fmt(base);
+          const frag = (inputFrag?.value || 'Fragrância desejada');
+          btn.href = wppLink(msgCustom(frag, size, base, obs));
+        }else{
+          const tabela = PRICES[type];
+          const preco = tabela[size];
+          priceEl.textContent = preco ? fmt(preco) : '—';
+          btn.href = wppLink(msg(produto, size, preco || 0, obs));
+        }
+      }
+      select && select.addEventListener('change', update);
+      inputFrag && inputFrag.addEventListener('input', update);
+      inputObs && inputObs.addEventListener('input', update);
+      update();
+    });
+
+    // Filtros
+    const filterBtns = document.querySelectorAll('[data-filter]');
+    filterBtns.forEach(b=>{
+      b.addEventListener('click', ()=>{
+        const cat = b.dataset.filter;
+        cards.forEach(c=>{
+          const show = (cat === 'all') || (c.dataset.category === cat);
+          c.style.display = show ? '' : 'none';
+        });
+        filterBtns.forEach(x=>x.classList.remove('primary'));
+        b.classList.add('primary');
+      });
+    });
+
+    // Seleciona "Todos" como ativo
+    document.querySelector('[data-filter="all"]').classList.add('primary');
+  </script>
+</body>
 </html>
